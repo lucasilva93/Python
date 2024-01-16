@@ -1,0 +1,160 @@
+print("CIAO", "RAGAZZI")
+CIAO RAGAZZI
+studenti = 25
+print(studenti)
+25
+alunni = 3
+classe = studenti + alunni
+print(classe)
+28
+stringa  = "EPICODE"
+print(stringa)
+EPICODE
+Lista = [0,1,2,3,4,5]
+Numeri = Lista
+print(Lista)
+[0, 1, 2, 3, 4, 5]
+nome_scuola = "Epicode"
+nome_scuola [0]
+'E'
+nome_scuola[0:3]
+'Epi'
+x = 10
+x + 2
+12
+x*3
+30
+(x+2)*3
+36
+x = x+2
+#senza operatori
+x = x*3
+print(x)
+36
+utente=input("DIGITARE")
+utente[0:3] + "..." + utente[-3:]
+utente=input("DIGITARE")
+DIGITAREELICOTTERO
+utente[0:3] + "..." + utente[-3:]
+'ELI...ERO'
+utente=input("DIGITARE")
+DIGITAREAZZURRO
+utente[0:3] + "..." + utente[-3:]
+'AZZ...RRO'
+utente=input("DIGITARE")
+DIGITARESCRIVANIA
+utente[0:3] + "..." + utente[-3:]
+'SCR...NIA'
+stringa1 = "Windows"
+stringa2 = "Excel"
+stringa3 = "PowerPoint"
+stringa4 = "Word"
+lunghezza1 = len(stringa1)
+lunghezza2 = len(stringa2)
+lunghezza3 = len(stringa3)
+lunghezza4 = len(stringa4)
+print(lunghezza1)
+7
+print(lunghezza2)
+5
+print(lunghezza3)
+10
+print(lunghezza4)
+4
+stringa3.find("Poi")
+5
+stringa5 = "Bene/male"
+stringa5.split("/")
+['Bene', 'male']
+numeroA=float(input("Inserisci il primo numero: "))
+Inserisci il primo numero: 7
+numeroB=float(input("Inserisci il secondo numero: "))
+Inserisci il secondo numero: 10
+moltiplicazione = numeroA*numeroB
+print(moltiplicazione)
+70.0
+numeroA=float(input("Inserisci il primo numero: "))
+Inserisci il primo numero: 3
+numeroB=int(input("Inserisci il secondo numero: "))
+Inserisci il secondo numero: 9
+moltiplicazione = numeroA*numeroB
+print("risultato", moltiplicazione)
+27.0
+
+",".join(["lunedì" ,"martedì", "mercoledì"])
+'lunedì,martedì,mercoledì'
+
+"Tara-Francesca-Antonella-Ginevra".split("-")
+['Tara', 'Francesca', 'Antonella', 'Ginevra']
+
+"Mario Francesco".split()
+['Mario', 'Francesco']
+stringa9 = "jkbsjkdcjb"
+stringa9.upper()
+'JKBSJKDCJB'
+
+stringa9.title()
+'Jkbsjkdcjb'
+
+stringa10 = "zzMariozzz"
+stringa10.strip("z")
+'Mario'
+
+z = "abc"
+z1 = z*3
+print(z1)
+abcabcabc
+
+pp = "Pippo" + "---" + str(3)
+print(pp)
+Pippo---3
+
+stringa11= "varianza ari"
+stringa11.replace("ari", "ARI")
+'vARIanza ARI'
+
+NN = 15
+type(NN)
+<class 'int'>
+
+stringa = "CCCDDD"
+stringa.find("E")
+-1
+
+parolaA = input("Parola prima")
+Parola primaeccomi
+parolaB = input("Parola seconda")
+Parola secondagià
+parolaC = input("Parola terza")
+Parola terzaquì
+lunghezzaA = len(parolaA)
+lunghezzaB= len(parolaB)
+lunghezzaC = len(parolaC)
+pr = lunghezzaA*lunghezzaB*lunghezzaC
+print("il risultato è:..   ", pr)
+il risultato è:..    54
+
+parolaA = input("inserisci la prima parola")
+inserisci la prima parolaarrivederci
+parolaB = input("inserisci la seconda parola")
+inserisci la seconda parolaciao
+parolaC = input("inserisci la terza parola")
+inserisci la terza parolaaddio
+parolaA.upper()
+'ARRIVEDERCI'
+parolaB.lower()
+'ciao'
+parolaC.title()
+'Addio'
+
+parolaA[0:3] + parolaB[0:3] + parolaC[0:3]
+'arrciaadd'
+
+a= 10
+b = 3
+print("maggiore" if a > 5 else "minore")
+maggiore
+
+print("vero" if a > 5 else "falso", "vero" if b > 4 else "falso")
+vero falso
+
