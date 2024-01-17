@@ -1,0 +1,120 @@
+nome_scuola = "Epicode"
+indice = 0
+lunghezza = len(nome_scuola)
+while indice < lunghezza:
+    print(nome_scuola[indice])
+    indice = indice + 1
+
+
+numero = 1
+while numero <= 20:
+    print(numero)
+    numero +=1
+
+potenza = int()
+while potenza <= 10:
+    quadrato = 2**potenza
+    print(quadrato)
+    potenza +=1
+
+print("Esponenziale")
+esponenziale = int(input())
+N = 0
+while N <= esponenziale:
+    R = 2** N
+    print(R)
+    N = N + 1
+
+esponente = 0
+while 2**esponente <= 25000:
+    potenze = 2**esponente
+    print(esponente)
+    esponente += 1
+
+
+print("digita una parola")
+parola = input()
+lunghezza = len(parola)
+if lunghezza >= 6:
+    print(parola[0:3]+ "..." + parola[-3:])
+elif lunghezza == 5:
+    print(parola[0:3]+ "..." + parola[-2:])
+elif lunghezza == 4:
+    print(parola[0:2]+ "..." + parola[-1:])
+elif lunghezza == 3:
+    print(parola[0:2]+ "..." + parola[-1:])
+else:
+    print("Troppo corta...")
+
+divisori = []
+numero = 300
+n = numero
+while n > 1: 
+    d = 2
+    while d <= n:
+        if n % d == 0:
+            divisori.append(d)
+            n //= d
+        d += 1 
+print("Divisori di", numero, " = ", divisori) #2,3,5,10
+
+k = int(input("Numero "))
+n = int(input("Esponente "))
+pp = n
+potenze = []
+while(n >= 0):
+    potenze.append(k**n)
+    n -= 1
+print(pp, potenze)
+
+
+guadagni = [100, 90, 70, 40, 50, 80, 90, 120, 80, 20, 50, 50]
+indice = 0
+somma = 0
+while indice < len(guadagni):
+    somma += guadagni[indice]
+    indice += 1
+    medium = somma/len(guadagni)
+print(medium)
+
+lista_cf = ["ABCDEF95G01A123B", "GHIJKL91M02A321C", "MNOPQR89S03A456D", "STUVWX95Z04A654E", "XYZABC01D05A789F", "DEFGHI95J06A987G"]
+trovati = []
+ricerca = "95"
+indice = 0
+while indice < len(lista_cf):
+    if ricerca in lista_cf[indice]:
+        trovati.append(lista_cf[indice])
+    indice += 1
+print("CF contenenti 95: ", trovati)
+
+
+studenti = ["Alex", "Bob", "Cindy", "Dan", "Emma", "Faith", "Grace", "Henry"] 
+corsi = ["Cybersecurity", "Data Analyst", "Backend", "Frontend", "Data Analyst", "Backend", "Frontend", "Cybersecurity"] 
+indix = 0
+while indix < len(edizioni):
+    if edizioni[indix] == 1:
+        print(studenti[indix], corsi[indix])
+    indix += 1
+
+
+prezzi = ["100 €", "200 €", "500 €", "10 €", "50 €", "70 €"]
+index = 0
+while index < len(prezzi):
+    prezzi[index] = prezzi[index].replace("€", "$")
+    index = index + 1
+print(prezzi)
+
+
+studenti = ["Alex", "Bob", "Cindy", "Dan", "Emma", "Faith", "Grace", "Henry", "Isabelle", "John"]
+squadraA = []
+squadraB = []
+i = 0
+while i < len(studenti):
+    if i % 2 == 0:
+        squadraA.append(studenti[i])
+    else:
+        squadraB.append(studenti[i])
+    i+=1
+print("La squadra A è composta dai seguenti studenti:  ", squadraA)
+print("La squadra b è invececomposta dai seguenti studenti:  ", squadraB)
+        
