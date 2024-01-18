@@ -1,0 +1,108 @@
+automobili = {"Ada":"Punto", "Ben":"Multipla" , "Charlie":"Golf", "Debbie": "107"}
+print(automobili)
+print(automobili["Debbie"])
+
+dizionario_auto = {"Ada": "Punto", "Ben": "Multipla", "Charlie": "Golf", "Debbie": "107"}
+for valori in dizionario_auto.values():
+    if valori != "Multipla":
+        print(valori)
+
+
+dizionario_auto_secondo = {"Ada": "Punto", "Ben": "Multipla", "Charlie": "Golf", "Debbie": "107", "Emily": "A1"} 
+nuovi_proprietari = {"Ben": "Polo", "Fred": "Octavia", "Grace": "Yaris", "Hugh": "Clio"}
+dizionario_auto_secondo.update(nuovi_proprietari)
+print(dizionario_auto_secondo) #Ben ha cambiato auto ed è stato modificato
+
+def massimo(numeroA, numeroB, numeroC, numeroD):
+    max = numeroA
+    if numeroB > max:ß
+        max = numeroB
+    if numeroC > max: 
+        max = numeroC
+    if numeroD > max:
+        max = numeroD
+    return max
+
+def minimo(numeroA, numeroB, numeroC, numeroD):
+    min = numeroA
+    if numeroB < min:
+        min = numeroB
+    if numeroC < min:
+        min = numeroC
+    if numeroD < min:
+        min = numeroD
+    return min
+
+numero1 = int(input("Inserisci il primo numero: "))
+numero2 = int(input("Inserisci il secondo numero: "))
+numero3 = int(input("Inserisci il terzo numero: "))
+numero4 = int(input("Inserisci il quarto numero: "))
+
+print("Il numero massimo inserito è : ", massimo(numero1, numero2, numero3, numero4))
+print("Il numero minimo inserito è: ", minimo(numero1, numero2, numero3, numero4))
+
+——
+def lista(numero1a, numero2b, numero3c, numero4d):
+    lista_n = [numero1a, numero2b, numero3c, numero4d]
+    
+    if len(lista_n) < 3:
+        corta = (numero1a, numero2b, numero3c, numero4d[:3])
+        print("inserisci almeno tre numeri")
+        return corta
+    else:
+        no_duplicati = sorted(set(lista_n), reverse=True)[:3]
+        return no_duplicati
+
+numero1a = int(input("Inserisci il primo numero: "))
+numero2b = int(input("Inserisci il secondo numero: "))
+numero3c = int(input("Inserisci il terzo numero: "))
+numero4d = int(input("Inserisci il quarto numero: "))
+print("I numeri senza duplicati sono:", lista(numero1a, numero2b, numero3c, numero4d))
+O
+def lista(numeri):
+
+  if len(numeri) < 3:
+        print(“Errore, inserisci almeno tre numeri")
+        Return None
+  else:
+        no_duplicati = sorted(set(numeri), reverse=True)[:3]
+        return no_duplicati
+
+numbers = [22,55,44,55,33,77,88]
+risultato = lista(numbers)
+print(" i 3 numeri più grandi non duplicati sono: ", risultato)
+
+——
+
+def values(numbers, k):
+    idonei = []
+    for numero in numbers:
+        if numero >= k:
+            idonei.append(numero)
+      
+    if not idonei: 
+        print("Nessun numero disponibile.")
+        return None
+
+    media = sum(idonei) / len(idonei)
+    return media
+
+nn = [1, 2, 3, 5, 33, 77, 88]
+k = 12
+ris = values(nn, k)
+
+print("Media dei numeri maggiori o uguali a k:", ris)
+
+numeri = [1,2,3,4,5,6,7,8]
+asterischi = ["*", "**" , "***", "****"]
+for t in numeri:
+    print("*" * t)
+
+ll =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+for tutti in ll:
+    print(tutti)
+
+t = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+for potenze in t:
+    if 2**potenze < 25000:
+        print("Potenze di 2 sotto i 25000", potenze)
